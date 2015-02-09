@@ -17,10 +17,12 @@
     "url": "http://github.com/polvo/polvo-stylus"
   },
   "dependencies": {
-    "source-map-support": "0.2.x",
-    "stylus": "0.37.x",
+    "autoprefixer-stylus": "^0.5.0",
     "nib": "1.0.x",
-    "regexp-clone": "0.0.x"
+    "regexp-clone": "0.0.x",
+    "rupture": "^0.6.1",
+    "source-map-support": "0.2.x",
+    "stylus": "0.37.x"
   },
   "devDependencies": {
     "coffee-script": "1.6.x",

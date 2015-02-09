@@ -7,6 +7,9 @@ stylus = require 'stylus'
 nib = require 'nib'
 clone = require 'regexp-clone'
 
+autoprefixer = require 'autoprefixer-stylus'
+rupture      = require 'rupture'
+
 module.exports = new class Index
 
   type: 'style'
@@ -29,6 +32,8 @@ module.exports = new class Index
     .set( 'filename', filepath )
     .use( nib() )
     .import( 'nib' )
+    .use( autoprefixer()  )
+    .use( rupture()       )
     .set('linenos', debug is true)
     .render (err, css)->
       if err?
